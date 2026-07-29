@@ -183,44 +183,43 @@ Para estruturar um bom prompt, profissionais utilizam frameworks que servem como
 ### Fundamentos e Conceitos Básicos
 
 LLM (Modelo de Linguagem de Grande Escala): É o "cérebro" da IA. Um modelo treinado com milhões de livros e textos para entender padrões de linguagem e prever a próxima palavra mais provável em uma frase
-.
+
 Prompt: É a instrução ou pergunta que você envia para a IA. É o ponto de partida que define o que o modelo deve fazer
-.
+
 Token: A menor unidade de texto que a IA processa. Pode ser uma palavra, parte dela ou até um sinal de pontuação. A IA não lê palavras como nós, ela lê "fatias" chamadas tokens
-.
+
 Janela de Contexto (Context Window): É o limite de "memória de curto prazo" da IA durante uma conversa. Se a conversa ficar longa demais e ultrapassar esse limite, a IA começa a esquecer as primeiras mensagens
-.
+
 Stateless (Sem Estado): Significa que, nativamente, a IA não tem memória própria entre sessões. Cada vez que você abre um novo chat, ela é uma "folha em branco" e precisa que você forneça o contexto novamente
-.
+
 Alucinação: Quando a IA gera informações que parecem verdadeiras, mas são inventadas. Isso geralmente acontece por falta de contexto ou instruções vagas.
 
 ### Técnicas de Estruturação
 
 Persona / Role Prompting: Técnica de atribuir um papel ou identidade à IA (ex: "Aja como um advogado"). Isso ajuda o modelo a filtrar o vocabulário e o tom corretos para a tarefa
-.
+
 Zero-shot: Quando você pede algo diretamente, sem dar nenhum exemplo anterior
-.
+
 Few-shot: Quando você fornece alguns exemplos (de 3 a 8) de "pergunta e resposta" antes de fazer o seu pedido real, para que a IA aprenda o padrão desejado
-.
+
 Cadeia de Pensamento (Chain-of-Thought - CoT): Instruir a IA a "pensar passo a passo". Isso força o modelo a realizar um raciocínio lógico antes de entregar a resposta final, o que reduz erros em tarefas complexas
-.
+
 Delimitadores: Símbolos como ###, """ ou tags XML (<instrução></instrução>) usados para separar claramente onde termina uma ordem e onde começa um texto que você quer que ela analise
-.
+
 
 ### Frameworks (Modelos estruturados)
 
 CO-STAR: Focado em comunicação e marketing. Divide o prompt em: Contexto, Objetivo, Stilo, Tom, Audiência e Resposta
-.
+
 RISEN: Focado em tarefas técnicas e processos. Divide o prompt em: Role (Papel), Instruções, Steps (Passos), End Goal (Meta Final) e Narrowing (Restrições)
 
 ### Parâmetros Técnicos e Avançados
 
 Temperatura: Um "botão" que regula a criatividade. Perto de 0, a IA é factual e direta; acima de 0.7, ela se torna mais criativa e aleatória
-.
+
 RAG (Geração Aumentada de Recuperação): Técnica que permite à IA consultar "livros externos" (como seus PDFs ou manuais da empresa) em tempo real para responder com fatos atualizados, em vez de depender apenas do seu treinamento original
-.
+
 Modelos Deliberativos (Reasoning Models): Nova geração de IAs (como o OpenAI o1) que possuem um "raciocínio profundo" nativo, planejando a resposta internamente antes de começar a escrever
-.
 
 ---
 
